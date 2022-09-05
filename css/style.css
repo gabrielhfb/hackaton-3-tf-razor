@@ -1,0 +1,64 @@
+header {
+	background: purple;
+	padding: 22px 0;
+}
+
+nav a {
+	color: white;
+	font-weight: bolder;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.abertura {
+  position: relative;
+}
+
+.mensagem {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  background: rgba(128, 0, 128, 75%);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 30%;
+  height: 70%;
+  opacity: 90%;
+
+
+}
+
+.mensagem h2 {
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+.mensagem p {
+	font-size: 22px;
+}
+
+h1 {
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+
+main {
+	margin: 20px 30px;
+}
+
+main p {
+	font-size: 20px;
+	margin: 15px 0;
+
+}
