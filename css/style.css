@@ -1,10 +1,15 @@
-html {
-	font-family: Arial, sans-serif;
+body {
+	font-family: "Arial", sans-serif;
 }
 
 header {
 	background: purple;
 	padding: 18px 0;
+	position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 nav a {
@@ -27,6 +32,7 @@ nav li {
 img {
 	width: 100%;
 	height: auto;
+	margin-top: 76px; /* Add a top margin to avoid content overlay */
 }
 
 .abertura {
@@ -105,4 +111,10 @@ main p {
 	font-size: 20px;
 	margin: 30px 0 30px 10px;
 
+}
+
+footer {
+	text-align: center;
+	background: mediumpurple;
+	padding: 40px 0;
 }
