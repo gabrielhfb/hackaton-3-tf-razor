@@ -4,7 +4,7 @@ body {
 
 header {
 	background: #7116f2;
-	padding: 1.5em 1em;
+	padding: 1.2em 1em;
 	position: fixed; 
   width: 100%;
   top: 0;
@@ -12,19 +12,30 @@ header {
   z-index: 999;
 }
 
-nav a {
+header img {
 	opacity: 1;
 	transition: 200ms all;
 }
 
-nav a:hover {
+header img:hover {
 	opacity: 0.5;
+}
+
+nav {
+	position: absolute;
+	top: 40%;
+	right: 5%;
 }
 
 nav li {
 	display: inline;
-	margin: 1em;
+	margin: 0 0 0 3em;
+  font-size: 1.1em;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
 }
+
 
 .abertura {
   position: relative;
@@ -107,7 +118,6 @@ h1 {
 
 .video {
 	text-align: center;
-	max-height: 60%;
 	height: auto;
 }
 
