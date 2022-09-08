@@ -9,22 +9,28 @@
 		<link rel="shortcut icon" href="https://razor.com.br/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<header>
-			<a href="https://razor.com.br/"><img src="https://razor.com.br/wp-content/themes/razortheme/assets/img/logo-razor-somente-texto-branco-sem-fundo.svg" alt="Logo da Razor Computadores"></a>
-			<nav>
+			<nav id="menuSuperior" class="menusuperior">
 				<ul>
+					<li class="separado"><a href="https://razor.com.br/"><img src="https://razor.com.br/wp-content/themes/razortheme/assets/img/logo-razor-somente-texto-branco-sem-fundo.svg" alt="Logo da Razor Computadores"></a></li>
 					<li><a href="#detalhes">Detalhes</a></li>
 					<li><a href="#squad">Squad</a></li>
+					<a href="javascript:void(0);" class="icon" onclick="menuResponsivo()">
+    					<i class="fa fa-bars"></i>
+  					</a>
 				</ul>
 			</nav>
+			<div class="container-progresso">
+    			<div class="barra-progresso" id="barraProg"></div>
+  			</div>
 		</header>
 		
 		<main>
 			<section class="abertura">
-				<img src="PRODIGY (1).png">
+				<img src="img/PRODIGY (1).png">
 				<div class="bloco-mensagem">
 					<h1>O computador Prodigy da Razor</h1>
 					<p>Alta performance para qualquer tipo de trabalho</p>
@@ -74,4 +80,7 @@
 		</footer>
 
 		</body>
+<script type="text/javascript" src="js/main.js">
+
+</script>
 </html>
