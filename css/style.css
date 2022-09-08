@@ -1,5 +1,5 @@
 body {
-	font-family: "Arial", sans-serif;
+	font-family: "Times New Roman", sans-serif;
 }
 
 header {
@@ -51,7 +51,7 @@ nav li {
   position: absolute;
   bottom: 4em;
   right: 1em;
-  background: rgba(113, 22, 242, 0.75);
+  background: rgba(20, 44, 252, 0.75);
   color: white;
   padding: 1em 1em;
   text-align: center;
