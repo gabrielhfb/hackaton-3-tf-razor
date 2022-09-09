@@ -23,7 +23,6 @@ nav {
 
 nav a {
 	float: right;
-	margin: auto 5% auto 0;
   font-size: 1.1em;
 	color: white;
 	font-weight: bold;
@@ -35,11 +34,13 @@ nav a {
 }
 
 nav a:hover{
-	background: yellow;
+	background: #F2EC16;
+	color: black;
 }
 
 nav .separado {
 	float: left;
+	font-size: 0.75em
 }
 
 nav img {
@@ -55,15 +56,11 @@ nav .icon {
   display: none;
 }
 
-.container-progresso {
-  width: 100%;
-  height: 8px;
-  background: #ccc;
-}
-
 .barra-progresso {
+	position: relative;
+	top: 3.3em;
   height: 8px;
-  background: #04AA6D;
+  background: #F2EC16;
   width: 0%;
 }
 
@@ -148,8 +145,7 @@ h1 {
 
 .video {
 	text-align: center;
-	height: auto;
-}
+	max-height: 70%;}
 
 footer {
 	text-align: center;
@@ -159,13 +155,13 @@ footer {
 	line-height: 2em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
 	.bloco-mensagem {
 		position: static;
 		max-width: 100%;
 	}
 
-	nav a {display: none;}
+	nav a {float: none; display: none;}
   nav a.icon {
     float: right;
     display: block;
