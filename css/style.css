@@ -143,9 +143,12 @@ h1 {
 	margin: 1em 0;
 }
 
-.video {
-	text-align: center;
-	max-height: 70%;}
+.video-razor {
+	display: block;
+    margin: auto;
+    width: 60%;
+    height: auto;
+}
 
 footer {
 	text-align: center;
@@ -179,7 +182,7 @@ footer {
     text-align: left;
   }
 
-  .video{
+  .video-razor {
   	width: 100%;
   }
 }
