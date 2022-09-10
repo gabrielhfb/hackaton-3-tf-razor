@@ -13,7 +13,26 @@
 	</head>
 	<body>
 		<header>
-			<nav id="menuSuperior" class="menusuperior">
+			<nav class="navbar">
+				<label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+						<i class="fa fa-bars"></i>
+					</label>
+				<a href="#" class="logo"><img src="https://razor.com.br/wp-content/themes/razortheme/assets/img/logo-razor-somente-texto-branco-sem-fundo.svg" alt="Logo da Razor Computadores"></a>
+				<input type="checkbox" id="chkToggle"></input>
+				<ul class="main-nav" id="js-menu">
+				  <li>
+					<a href="#abertura" class="nav-links">Home</a>
+				  </li>
+				  <li>
+					<a href="#prodigy" class="nav-links">Prodigy</a>
+				  </li>
+				  <li>
+					<a href="#squad" class="nav-links">Squad</a>
+				  </li>
+				</ul>
+			</nav>
+
+			<!--<nav id="menuSuperior" class="menusuperior">
 				<ul>
 					<li class="separado"><a href="https://razor.com.br/"><img src="https://razor.com.br/wp-content/themes/razortheme/assets/img/logo-razor-somente-texto-branco-sem-fundo.svg" alt="Logo da Razor Computadores"></a></li>
 					<li><a href="#detalhes">Detalhes</a></li>
@@ -22,49 +41,75 @@
     					<i class="fa fa-bars"></i>
   					</a>
 				</ul>
-			</nav>
+			</nav> -->
+			
     		<div class="barra-progresso" id="barraProg"></div>
+
 		</header>
-		
-		<main>
 			<section class="abertura">
 				<img src="img/PRODIGY (1).png">
 				<div class="bloco-mensagem">
 					<h1>A Workstation PRO Prodigy da Razor</h1>
-					<p>Uma máquina de alta performance que se adapta às suas demandas</p>
+					<p>Uma máquina de alta performance adaptável às demandas mais pesadas</p>
 					<button>Saiba mais</button>
 				</div>
-			</section>
+			</section> 
 			<section class="informacoes">
 				<section class="diferenciais">
-					<h2 id="detalhes">Nossos diferenciais</h2>
+					<h2 id="detalhes">Worstation PRO Prodigy</h2>
 
-					<h3>Processador poderoso</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus risus orci, placerat in dolor vitae, lobortis faucibus sapien. Etiam quam libero, tristique ac consequat id, mollis quis nisi.</p>
+					<h3>Robusta, segura e expansível</h3>
 
-					<h3>Placa gráfica para seus programas favoritos</h3>
-					<p>Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque ut sollicitudin felis, a porttitor ipsum. Nam congue lacus ut fermentum convallis. Sed cursus ante elit, vitae sodales lorem aliquam quis. Phasellus mauris nisl, semper et dapibus eget, vestibulum ac quam. </p>
+					<p>A Workstation Pro Prodigy foi projetada para profissionais que precisam de uma máquina potente, capaz de rodar os softwares mais complexos e pesados do mercado.</p>
 
-					<h3>Design elegante</h3>
-					<p>Suspendisse blandit interdum eros ut eleifend. Vivamus nunc lacus, suscipit et dolor vitae, sodales commodo ligula. Nunc rutrum metus vitae lorem dapibus hendrerit. Curabitur ipsum ex, cursus eget diam id, iaculis condimentum odio. Nulla vulputate feugiat nulla ornare pulvinar. Nam laoreet sit amet massa a imperdiet. Sed commodo commodo augue sit amet hendrerit. </p>
+					<p>Ela é o modelo intermediário da Linha Pro da Razor Computadores, capaz de providenciar velocidade e performance na realização de tarefas como computação gráfica, renderização, simulações e análises robustas.</p>
+
+					<p>Além disso, seja você um profissional de design, de mídia e entretenimento, do setor de contrução, ou do setor de tecnologia e desenvolvimento, a Linha Pro de Workstations da Razor é capaz de fornecer soluções personalizadas para atender às suas necessidades. </p>
+
+					<h3>Processador de Alta Potência</h3>
+					<p>A Workstation Pro Prodigy possui opções de processadores AMD® Ryzen™ de terceira geração e Intel® Core™ de décima geração, permitindo a instalação de até 8 núcleos e 16 threads, garantindo excelente performance no processamento de dados.</p>
+
+					<h3>Placa de Vídeo para Melhor Performance</h3>
+					<p>Escolha entre as placas de vídeo Nvidia® Geforce™ GTX 1660S, RTX 3060, RTX 3070 e RTX 3080 e as placas profissionais Nvidia® Quadro™ P1000, P2200, RTX 4000 e RTX 5000, capazes de fornecer o máximo de performance gráfica. </p>
+
+					<h3>Capacidade de Memória e Armazenamento Expansível</h3>
+					<p>Na Workstation Pro Prodigy é possível instalar até 28TB de armazenamento de dados em disco rígido ou até 6 TB em armazenamento All Flash SSD, bem como até 128GB de memória RAM DDR4 para garantir o melhor desempenho para o seu sistema.</p>
+
+					<h3>Desempenho testado e certificado</h3>
+					<p>Os modelos da Linha Pro da Razor, entre eles a Workstation Prodigy, foram submetidos a mais de 1000 horas de testes, com qualidade aprovada para uso em ambientes profissionais altamente exigentes.  </p>
+
+					<p>Acesse <a href="https://razor.com.br/wp-content/uploads/2021/03/ficha_tecnica_prodigy.pdf">aqui</a> para conferir as demais especificações técnicas deste produto.</p>
+
+					<p>Confira uma visão geral da Workstation Prodigy:</p>
 
 					<video class="video-razor" width="1280" height="720" controls autoplay muted><source src="video/video-prodigy.mp4" type="video/mp4"></video>
 				</section>
+
+				
+
 				<section class="equipe">
 					<h2 id="squad">Squad 8 - Explorers</h2>
+					<p>Esta Landing Page foi elaborada pelo Squad 8 do #TeuFuturo Web 2022. O #TeuFuturo é uma iniciativa que busca acelerar jovens talentos, fornecendo experiências técnicas (em Programação Web) e comportamentais para gerar ciclos sustentáveis de inovação e transformação social.</p>
+
+					<p>Nesta edição, patrocinada principalmente pela Razor Computadores, foram fornecidas 200 vagas para jovens de 16 a 30 anos, que terão até o final do curso mais de 270 horas de atividades online, totalmente gratuitas.</p>
+
+					<p>Confira abaixo os integrantes que participaram ativamente na elaboração dessa página:</p>
+
 					<h3>Felipe Lafin</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum feugiat neque eget pharetra. Nullam in ante ex. Mauris lobortis vehicula mi vel venenatis. Proin mauris odio, egestas id lacinia non, posuere in justo. Phasellus lectus libero, eleifend vitae lobortis a, vehicula in massa. Curabitur vitae ipsum consequat, scelerisque mi aliquet, consectetur massa.</p>
+					<p></p>
 					<ul>
 						<li>Linkedin</li>
 						<li>Github</li>
 					</ul>
 
-					<h3>Gabriel Henrique</h3>
-					<p>Praesent mattis, turpis eget fermentum euismod, turpis odio fermentum lacus, in congue erat libero et sapien. Maecenas posuere enim dolor, a porttitor nisl ultrices a. Aenean eu felis in felis tristique ultrices eu viverra felis. Pellentesque in lectus a justo ultricies sollicitudin eget in massa. Sed egestas et dolor maximus fringilla. Sed congue mauris non ipsum euismod, id feugiat metus efficitur. Phasellus viverra id elit sed elementum. Vestibulum quis ligula sit amet mauris sagittis semper.</p>
+					<h3>Gabriel Henrique Fiszczuk Brandeburski</h3>
+					<p>Natural de Porto Alegre/RS, tem 18 anos e começou a estudar programação no início de 2022, graças à oportunidade de participar do #TeuFuturo. Apaixonado por gatos, ciências exatas e em aprender coisas novas, Gabriel é o Líder, Scrum Master, Líder dos Desenvolvedores e Designer do Squad.</p>
 					<ul>
-						<li>Linkedin</li>
-						<li>Github</li>
+						<li><a href="https://www.linkedin.com/in/gabriel-henrique-fiszczuk-brandeburski/">Linkedin</a></li>
+						<li><a href="https://github.com/gabrielhfb">Github</a></li>
 					</ul>
+
+					<img class="imagem-squad" src="img/squad.JPG">
 				</section>
 
 				
