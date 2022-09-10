@@ -145,9 +145,10 @@ h1 {
 
 .video-razor {
 	display: block;
-	margin: auto;
-	width: 60%;
-	max-height: 70%;}
+    margin: auto;
+    width: 60%;
+    height: auto;
+}
 
 footer {
 	text-align: center;
