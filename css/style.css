@@ -143,8 +143,10 @@ h1 {
 	margin: 1em 0;
 }
 
-.video {
-	text-align: center;
+.video-razor {
+	display: block;
+	margin: auto;
+	width: 60%;
 	max-height: 70%;}
 
 footer {
@@ -179,7 +181,7 @@ footer {
     text-align: left;
   }
 
-  .video{
+  .video-razor {
   	width: 100%;
   }
 }
