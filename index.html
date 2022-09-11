@@ -4,31 +4,34 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Razor Computadores</title>
+		<title>PRO Prodigy - Razor</title>
 
 		<link rel="shortcut icon" href="https://razor.com.br/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	</head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		
 	<body>
 		<header>
 			<nav class="navbar">
 				<label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
 						<i class="fa fa-bars"></i>
 					</label>
-				<a href="#" class="logo"><img src="https://razor.com.br/wp-content/themes/razortheme/assets/img/logo-razor-somente-texto-branco-sem-fundo.svg" alt="Logo da Razor Computadores"></a>
+				<a href="https://razor.com.br" class="logo" target="_blank"><img src="https://razor.com.br/wp-content/themes/razortheme/assets/img/logo-razor-somente-texto-branco-sem-fundo.svg" alt="Logo da Razor Computadores"></a>
 				<input type="checkbox" id="chkToggle"></input>
 				<ul class="main-nav" id="js-menu">
-				  <li>
-					<a href="#abertura" class="nav-links">Home</a>
-				  </li>
-				  <li>
-					<a href="#prodigy" class="nav-links">Prodigy</a>
-				  </li>
-				  <li>
-					<a href="#squad" class="nav-links">Squad</a>
-				  </li>
+				  	<a href="#" class="nav-links">
+				  		<li>Home</li>
+				  	</a>
+				  	<a href="#detalhes" class="nav-links">
+				  		<li>Prodigy</li>
+				  	</a>
+				   	<a href="#squad" class="nav-links">
+				   		<li>Squad</li>
+				   	</a>
 				</ul>
 			</nav>
 
@@ -49,14 +52,14 @@
 			<section class="abertura">
 				<img src="img/PRODIGY (1).png">
 				<div class="bloco-mensagem">
-					<h1>A Workstation PRO Prodigy da Razor</h1>
+					<h1>A Workstation PRO <strong>Prodigy</strong> da <img src="https://razor.com.br/wp-content/themes/razortheme/assets/img/logo-razor-somente-texto-branco-sem-fundo.svg" alt="Logo da Razor Computadores"></h1>
 					<p>Uma máquina de alta performance adaptável às demandas mais pesadas</p>
 					<button>Saiba mais</button>
 				</div>
 			</section> 
 			<section class="informacoes">
 				<section class="diferenciais">
-					<h2 id="detalhes">Worstation PRO Prodigy</h2>
+					<h2 id="detalhes">Workstation PRO Prodigy</h2>
 
 					<h3>Robusta, segura e expansível</h3>
 
@@ -82,11 +85,66 @@
 
 					<p>Confira uma visão geral da Workstation Prodigy:</p>
 
-					<video class="video-razor" width="1280" height="720" controls autoplay muted><source src="video/video-prodigy.mp4" type="video/mp4"></video>
+					<video class="video-razor" width="1280" height="720" controls autoplay muted loop><source src="video/video-prodigy.mp4" type="video/mp4"></video>
 				</section>
 
-				
+				<section class="contate-nos">
+					<h2 id="contato">Entre em Contato com a Razor</h2>
+					<div class="contato-box">
+						<img src="img/contato-razor.JPG">
+						<p>Ficou interessado em conhecer melhor como a Razor pode ajudar a sua empresa? Preencha um breve formulário e um de nossos especialistas irá entrar em contato com você para fazer um orçamento.</p>
+						<button id="myBtn">Entre em contato</button>
+					</div>
+				</section>
 
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form>
+				<label for="nome-sobrenome">Nome e sobrenome</label>
+				<input type="text" id="nome-sobrenome" class="input-padrao" required>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea required>
+
+				<fieldset>
+					<legend>Como prefere o nosso contato?</legend>
+
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+					
+
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+					
+
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Qual horário prefere ser atendido?</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+				<label><input type="checkbox" class="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+				<input type="submit" value="Enviar formulário" class="enviar">
+
+			</form>
+  </div>
+
+</div> 
 				<section class="equipe">
 					<h2 id="squad">Squad 8 - Explorers</h2>
 					<p>Esta Landing Page foi elaborada pelo Squad 8 do #TeuFuturo Web 2022. O #TeuFuturo é uma iniciativa que busca acelerar jovens talentos, fornecendo experiências técnicas (em Programação Web) e comportamentais para gerar ciclos sustentáveis de inovação e transformação social.</p>

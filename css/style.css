@@ -1,10 +1,12 @@
 html {
 	scroll-behavior: smooth;
+	scroll-padding-top: 5em;
 }
 
 body {
-	font-family: "Arial", sans-serif;
+	font-family: 'Poppins', sans-serif;	
 	margin: 0;
+	scroll-padding-top: 3rem;
 }
 
 header {
@@ -14,6 +16,10 @@ header {
   left: 0;
   z-index: 1;
   overflow: hidden;
+}
+
+.logo:hover {
+	opacity: 0.75;
 }
 /*
 .menusuperior {
@@ -71,38 +77,52 @@ header {
 
 .abertura img {
 	width: 100%;
-	border-bottom: 3px solid #7116f2;
+	border-bottom: 5px solid #7116f2;
+}
+
+.abertura .bloco-mensagem img {
+	height: 1em;
+	border-bottom: none;
 }
 
 .bloco-mensagem {
   position: absolute;
-  bottom:0.5em;
-  right: 0.2em;
+  bottom:0.49em;
+  right: 0;
   background: rgba(113, 22, 242,0.75);
   color: white;
-  padding: 1em 1em;
+  padding: 1.1em 1.1em;
   text-align: center;
   max-width: 45%;
   height: 100%;
   border-radius: 4px;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+	justify-content: center;
 }
 
 h1 {
 	font-size: 2.5em;
-	padding: 0.8em 1em;
+	padding: 0.5em 0.5em;
 	font-weight: bold;
 	line-height: 1.8em;
 }
 
+.bloco-mensagem strong {
+	text-transform: uppercase;
+	color: gold;
+	font-size: 1.15em;
+}
+
 .bloco-mensagem p {
 	font-size: 1.5em;
-	padding: 0.8em 1em;
+	padding: 0.5em 0.5em;
 	line-height: 1.8em
 }
 
-.bloco-mensagem button {
-	margin: 1em 0 0 0;
+.bloco-mensagem button, .contato-box button {
+	margin: 0.5em 0 0 0;
 	background-color: black;
 	border: none;
   color: white;
@@ -114,12 +134,13 @@ h1 {
 	border-radius: 5px;
 	transition: 0.5s all;
 	cursor: pointer;
+	font-family: Poppins;
 }
 
-.bloco-mensagem button:hover {
+.bloco-mensagem button:hover, .contate-nos button:hover {
 	background-color: #F2EC16;
 	color: black;
-	transform: scale(1.05);
+	transform: scale(1.03);
 }
 
 .informacoes {
@@ -130,6 +151,7 @@ h1 {
 	font-size: 2.25em;
 	margin: 1em 0;
 	font-weight: bold;
+	clear: left;
 }
 
 .informacoes h3 {
@@ -145,11 +167,23 @@ h1 {
 	line-height: 1.2em;
 }
 
+.informacoes a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	color: rgb(113, 22, 242);
+}
+
+.informacoes a:hover{
+	color: gold;
+}
+
 .video-razor {
 	display: block;
   margin: auto;
   width: 60%;
   height: auto;
+	border: 2px solid #f2ec16;
 }
 
 .imagem-squad {
@@ -161,6 +195,52 @@ h1 {
 	border-radius: 3px;
 }
 
+.contato-box img {
+	width: 40%;
+	float: left;
+	margin: 0 2em 2em 0;
+	border: 2px solid #f2ec16;
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 100%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.2);
+}
+
 footer {
 	text-align: center;
 	background: #7116f2;
@@ -169,7 +249,7 @@ footer {
 	line-height: 2em;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
 	.bloco-mensagem {
 		position: static;
 		max-width: 100%;
@@ -193,14 +273,15 @@ footer {
     text-align: left;
   }*/
 
-  .video-razor {
+  .video-razor, .imagem-squad {
   	width: 100%;
-
-	.barra-progresso {
-		  top: 7em;
 	}
-  }
-}*/
+	.barra-progresso {
+		  top: 2.8em;
+		  height: 6px;
+	}
+
+}
 
 * {
 	box-sizing: border-box;
@@ -208,12 +289,8 @@ footer {
 	margin: 0;
   }
   
-  body {
-	font-family: Roboto, Helvetica, Arial, sans-serif;
-  }
-  
   .navbar {
-	font-size: 18px;
+	font-size: 1.2em;
 	background: rgb(113, 22, 242);
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	padding-bottom: 10px;
@@ -228,26 +305,41 @@ footer {
   .logo {
 	text-decoration: none;
 	color: rgba(255, 255, 255);
+		text-transform: uppercase;
+		font-weight: bold
   }
   
   .main-nav li {
+	margin-top: 0.6em;
 	text-align: left;
-	margin: 1em 1em;
-  }
+	padding: 1.3em 1em;
+		transition: 0.5s all;
+}
+
+.main-nav li:hover {
+	background-color: #F2EC16;
+	color: black;
+}
   
   .logo {
 	display: inline-block;
 	font-size: 22px;
 	margin-top: 10px;
 	margin-left: 20px;
+		opacity: 100%;
+		transition: 1s all;
   }
+
+.logo:hover {
+	opacity: 70%;
+}
   
   .navbar-toggle {
 	position: absolute;
 	top: 10px;
 	right: 20px;
 	cursor: pointer;
-	color: rgba(255, 255, 255, 0.8);
+	color: rgba(255, 255, 255, 1);
 	font-size: 24px;
   }
   
@@ -295,8 +387,45 @@ footer {
 	  display: none;
 	}
   
-	.logo:hover,
-	.nav-links:hover {
-	  color: rgba(255, 255, 255, 1);
+	.logo:hover, {
+    opacity: 75%;
 	}
 }
+
+ /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 0 auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
