@@ -18,49 +18,14 @@ header {
   overflow: hidden;
 }
 
-.logo:hover {
-	opacity: 0.75;
-}
-/*
-.menusuperior {
-	display: block;
+.razor-logo {
+	fill: white;
+	transition: 1s all;
 }
 
-.menusuperior a {
-	float: right;
-  font-size: 1.1em;
-	color: white;
-	font-weight: bold;
-	text-transform: uppercase;
-	text-align: center;
-	text-decoration: none;
-	padding: 1.2em;
-	display: inline;
+.razor-logo:hover {
+	fill: yellow;
 }
-
-
-.menusuperior a:hover{
-	background: #F2EC16;
-	color: black;
-}
-
-.menusuperior .separado {
-	float: left;
-	font-size: 0.75em
-}
-
-.menusuperior img {
-	opacity: 1;
-	transition: 200ms all;
-}
-
-.menusuperior img:hover {
-	opacity: 0.5;
-}
-
-.menusuperior .icon {
-  display: none;
-}*/
 
 .barra-progresso {
 	position: absolute;
@@ -160,6 +125,12 @@ h1 {
 	font-weight: bold;
 }
 
+.informacoes .atencao {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.3em
+}
+
 .informacoes p {
 	font-size: 1.2em;
 	margin: 1.2em 0;
@@ -178,6 +149,12 @@ h1 {
 	color: gold;
 }
 
+.diferenciais img {
+	width: 25%;
+	float: right;
+	margin: 0 0 2em 2em;
+}
+
 .video-razor {
 	display: block;
   margin: auto;
@@ -186,7 +163,47 @@ h1 {
 	border: 2px solid #f2ec16;
 }
 
+.felipe {
+	margin: 3em 0 3em 0;
+}
+
+.gabriel {
+	clear: left;
+}
+
+.gabriel img, .felipe img  {
+	width: 20%;
+	float: left;
+	margin: 0 2em 2em 0;
+	border: 2px solid #f2ec16;
+}
+
+.gabriel ul, .felipe ul {
+	text-align: right;
+}
+
+.icons {
+	display: flex;
+	justify-content: center;
+}
+
+.linkedin {
+	width: 3em;
+	fill: #0A66C2;
+	margin-right: 2em;
+}
+
+.github {
+	width: 3em;
+	fill: #181717;
+}
+
+.linkedin:hover, .github:hover {
+	fill: #7116f2;
+}
+
 .imagem-squad {
+	clear: left;
 	display: block;
   margin: 2em auto;
   width: 60%;
@@ -202,14 +219,65 @@ h1 {
 	border: 2px solid #f2ec16;
 }
 
+
+ /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 0 auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
 form {
 	margin: 40px 0;
 }
 
-form label, form legend {
+.contato-info label {
+	color: rgb(113, 22, 242);
+	font-size: 1.3em;
+}
+
+form label {
 	display: block;
-	font-size: 20px;
-	margin: 0 0 10px;
+	font-size: 1.2em;
+	margin: 0.5em 0 0.7em;
+}
+
+form legend {
+	display: block;
+	font-size: 1.3em;
+	margin: 2em 0 0.3em;
+	color: rgb(113, 22, 242);
 }
 
 .input-padrao {
@@ -224,9 +292,11 @@ form label, form legend {
 }
 
 .enviar {
-	width: 40%;
+	width: 70%;
+	display: block;
+	margin: 2em auto 0;
 	padding: 15px 0;
-	background: orange;
+	background: rgb(113, 22, 242);
 	color: white;
 	font-weight: bold;
 	font-size: 18px;
@@ -237,8 +307,9 @@ form label, form legend {
 }
 
 .enviar:hover {
-	background: darkorange;
-	transform: scale(1.2);
+	background: #f2ec16;
+	transform: scale(1.05);
+	color: black;
 }
 
 footer {
@@ -249,36 +320,26 @@ footer {
 	line-height: 2em;
 }
 
+
 @media screen and (max-width: 768px) {
 	.bloco-mensagem {
 		position: static;
 		max-width: 100%;
+		opacity: 100%;
+		background: rgb(113, 22, 242,0.9);
 	}
 
-	/*.menusuperior a {float: none; display: none;}
-  .menusuperior a.icon {
-    float: right;
-    display: block;
-  }
-
-  .menusuperior.responsive {position: relative;}
-  .menusuperior.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .menusuperior.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }*/
-
-  .video-razor, .imagem-squad {
+  .video-razor, .imagem-squad, .diferenciais img, .contato-box img, .contato-box button, .felipe img, .gabriel img {
   	width: 100%;
 	}
 	.barra-progresso {
 		  top: 2.8em;
 		  height: 6px;
+	}
+	
+	.modal-content {
+		width: 95%;
+		margin: 2.8em auto 2em
 	}
 
 }
@@ -286,7 +347,7 @@ footer {
 * {
 	box-sizing: border-box;
 	padding: 0;
-	margin: 0;
+	/*! margin: 0; */
   }
   
   .navbar {
@@ -329,10 +390,6 @@ footer {
 		opacity: 100%;
 		transition: 1s all;
   }
-
-.logo:hover {
-	opacity: 70%;
-}
   
   .navbar-toggle {
 	position: absolute;
@@ -386,46 +443,4 @@ footer {
 	.navbar-toggle {
 	  display: none;
 	}
-  
-	.logo:hover, {
-    opacity: 75%;
-	}
 }
-
- /* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 0 auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-} 
